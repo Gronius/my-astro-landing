@@ -1,0 +1,63 @@
+.enjoy {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-block: 190px 230px;
+}
+
+.enjoy__content {
+  /* text-align: center; */
+  color: #fff;
+}
+.text {
+  padding-block: 10px;
+}
+.enjoy-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 51px;
+}
+.enjoy-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--c-black);
+  color: #fff;
+  padding: 64px 80px;
+}
+
+.enjoy-card::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: currentColor;
+  margin-bottom: 22px;
+}
+
+.enjoy-card--icon-bike::before {
+  mask-image: var(--icon-bike);
+}
+.enjoy-card--icon-helmet::before {
+  mask-image: var(--icon-helmet);
+}
+.enjoy-card--icon-park::before {
+  mask-image: var(--icon-park);
+}
+
+.enjoy-card--white {
+  background-color: #fff;
+  color: var(--c-black);
+}
+.enjoy-card__title {
+  font-size: 36px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.enjoy-card__text {
+  max-width: 240px;
+  width: 100%;
+}

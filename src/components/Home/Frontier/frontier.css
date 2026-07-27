@@ -1,0 +1,20 @@
+.frontier {
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  left;
+}
+.frontier__inner {
+  /* min-height: 400px; */
+  padding-block: 116px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+ 
+}
+.frontier__content {
+  max-width: 650px;
+  color: #fff;
+}
+/* .frontier__text {
+  max-width: 602px;
+} */

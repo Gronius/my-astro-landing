@@ -1,0 +1,31 @@
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__inner {
+  min-height: 800px;
+  height: 100vh;
+  max-height: 1000px;
+  display: grid;
+  align-items: center;
+}
+.hero__content {
+  padding-left: 60px;
+}
+.hero__title {
+  font-size: 180px;
+  max-width: 499px;
+  width: 100%;
+  line-height: 149px;
+  color: var(--c-black);
+  margin-bottom: 20px;
+}
+.hero__text {
+  font-family: var(--ff-dm-sans);
+  font-size: 18px;
+  line-height: 29px;
+  max-width: 316px;
+   color: var(--c-black);
+}

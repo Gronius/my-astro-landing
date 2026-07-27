@@ -1,0 +1,31 @@
+.sc-design {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sc-design__inner {
+  min-height: 823px;
+  height: 100vh;
+  max-height: 920px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.sc-design__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.sc-design__title {
+  font-size: 180px;
+  max-width: 513px;
+  width: 100%;
+  line-height: 0.8;
+  color: var(--c-white);
+}
+.sc-design__text {
+  max-width: 365px;
+  color: var(--c-white);
+}

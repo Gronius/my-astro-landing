@@ -1,0 +1,93 @@
+.faq {
+  padding-bottom: 140px;
+}
+
+.faq__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  align-items: center;
+}
+
+
+/* .fag-card__head {
+  padding-block: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.fag-card__head::after {
+  content: "+";
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e5e5e5;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 5%;
+}
+
+.faq-card[open] .fag-card__head::after {
+  content: "-";
+}
+
+.fag-card__head::-webkit-details-marker {
+  display: none;
+} */
+
+.fag-card__head {
+  padding-block: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.fag-card__head::-webkit-details-marker {
+  display: none;
+}
+
+.fag-card__head::after {
+  content: "";
+
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  border-radius: 5%;
+  background-color: #e5e5e5;
+
+  background-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000);
+
+  background-repeat: no-repeat;
+
+  /* горизонтальна лінія */
+  background-size: 14px 2px, 2px 14px;
+
+  /* обидві по центру */
+  background-position: center;
+
+  transition: background-size 0.6s ease;
+}
+
+/* + → − */
+.faq-card[open] .fag-card__head::after {
+  background-size: 14px 2px, 2px 0;
+}
+
+.fag-card__title {
+  font-size: 36px;
+  line-height: 1;
+}
+.faq-card__content {
+  max-width: 450px;
+}

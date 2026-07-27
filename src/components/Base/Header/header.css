@@ -1,0 +1,81 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background-color: transparent;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header__container {
+  max-width: 1880px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+}
+.menu__link {
+  display: inline-block;
+  padding: 25px;
+  text-transform: uppercase;
+}
+
+.menu__link,
+.header__phone {
+  color: inherit; /* Успадковує колір від .header */
+  transition: color 0.3s ease;
+}
+.header__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header__search {
+  min-width: 30px;
+  height: 30px;
+  mask-image: var(--icon-search);
+ mask-position: center;
+ mask-size: contain;
+ mask-repeat: no-repeat;
+ background-color: #000;
+ }
+ /* .logo-fixed {
+  display: none;
+ }
+ .header.fixed .logo-main{
+  display: none;
+ }
+  .header.fixed .logo-fixed{
+  display: block;
+ } */
+
+
+ /* Стан хедера при скролі (інверсія кольорів) */
+.header.scrolled {
+  background-color: #000; /* Протилежний фон (наприклад, чорний) */
+  color: #fff;            /* Протилежний колір тексту (білий) */
+}
+
+/* Зміна кольору іконки пошуку при скролі */
+.header.scrolled .header__search {
+  background-color: #fff;
+}
+
+/* Логіка перемикання логотипів */
+.logo-fixed {
+  display: none;
+}
+
+.header.scrolled .logo-main {
+  display: none;
+}
+
+.header.scrolled .logo-fixed {
+  display: block;
+}
+
