@@ -2,7 +2,7 @@
 import './hero.css';
 ---
 
-<section class="hero" style="background-image: url('./images/hero.webp');">
+<section class="hero" style={`background-image: url('${import.meta.env.BASE_URL}/images/hero.webp');`}>
   <div class="container hero__inner">
     <div class="hero__content">
       <h1 class="hero__title">Kick’s Scooter</h1>     

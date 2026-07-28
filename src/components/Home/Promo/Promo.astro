@@ -2,9 +2,9 @@
 import './promo.css'
 ---
 
-<section class="promo" style="background-image: url('./images/promo_bg.webp');">
+<section class="promo" style={`background-image: url('${import.meta.env.BASE_URL}/images/promo_bg.webp');`}>
   <div class="container promo__inner">
-    <div class="promo__box" style="background-image: url('/images/promo.webp')">
+    <div class="promo__box" style={`background-image: url('${import.meta.env.BASE_URL}/images/promo.webp');`}>
       <div class="promo__content">
         <h2 class="title promo__title">KickScooter s1</h2>
           <div class="text-content promo__text">
